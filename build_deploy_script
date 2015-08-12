@@ -1,0 +1,11 @@
+#!/bin/bash
+
+SOURCEDIR=~/projects/rhostam/
+SOURCEDISTDIR=~/projects/rhostam/dist/
+DESTDIR=/var/www/rhostam.com/public_html/
+
+cd $SOURCEDIR
+grunt --force
+
+cd $SOURCEDISTDIR
+sudo cp -R * $DESTDIR

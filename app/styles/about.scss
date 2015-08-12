@@ -1,0 +1,23 @@
+.aboutQuote {
+}
+
+.team {
+
+	.teamMember{
+		text-align: center;
+		.portrait {
+			height: 200px;
+		}
+		.memberName {
+			font-size: 32px;
+			font-weight: 300;
+		}
+		.memberPosition {
+			font-size: 15px;
+			font-weight: 300;
+		}
+		.socialIcon {
+			padding-right: 10px;
+		}
+	}
+}

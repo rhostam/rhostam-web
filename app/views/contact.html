@@ -1,0 +1,85 @@
+<div class="container" ng-controller="ContactCtrl">
+    <div class="row pageHeading">
+        <div class="col-md-2">
+            <span class="mainHeading">Contact</span>
+        </div>
+        <div class="col-md-offset-6 col-md-4 subHeading">
+            <span>Individual Attention.</span>
+        </div>
+    </div>
+    <div class="row pageHeadingSeparator">
+        <div class="col-md-12">
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-9">
+            <div class="well">
+                <h3>Get in touch.</h3>
+                <span style="font-size: 18px;font-weight: 300;text-align: justify;">
+                    Rhostam respects and honors the diversity of opinion within the big-data ecosystem. We welcome the opportunity to have both theoretical and practical conversations with like-minded colleagues. Please complete the simple form below and we will contact you as soon as possible.
+                </span>
+                <hr style="height:2px;border:none;color:#AAA;background-color:#AAA;" />
+                <form ng-submit="submit(contactform)" name="contactform" method="post" action="" class="form-horizontal" role="form" style="margin-top: 40px;">
+                    <div class="form-group" ng-class="{ 'has-error': contactform.inputName.$invalid && submitted }">
+                        <label for="inputName" class="col-lg-2 control-label">Name</label>
+                        <div class="col-lg-8">
+                            <input ng-model="formData.inputName" type="text" class="form-control" id="inputName" name="name" placeholder="Your Name" required>
+                        </div>
+                    </div>
+                    <div class="form-group" ng-class="{ 'has-error': contactform.inputEmail.$invalid && submitted }">
+                        <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+                        <div class="col-lg-8">
+                            <input ng-model="formData.inputEmail" type="email" class="form-control" id="inputEmail" name="replyto" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="form-group" ng-class="{ 'has-error': contactform.inputSubject.$invalid && submitted }">
+                        <label for="inputSubject" class="col-lg-2 control-label">Subject</label>
+                        <div class="col-lg-8">
+                            <input ng-model="formData.inputSubject" type="text" class="form-control" id="inputSubject" name="subject" placeholder="Message Subject" required>
+                        </div>
+                    </div>
+                    <div class="form-group" ng-class="{ 'has-error': contactform.inputMessage.$invalid && submitted }">
+                        <label for="inputMessage" class="col-lg-2 control-label">Message</label>
+                        <div class="col-lg-8">
+                            <textarea ng-model="formData.inputMessage" class="form-control" rows="4" id="inputMessage" name="message" placeholder="How can we help?" required></textarea>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <div class="col-lg-offset-2 col-lg-10">
+                            <button type="submit" class="btn btn-success" ng-disabled="submitButtonDisabled">
+                                Send Message
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <p ng-class="result" style="padding: 15px; margin: 0;">{{ resultMessage }}</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="well">
+                <h3>Locations</h3>
+                <span style="font-size: 18px;font-weight: 300;text-align: justify;">
+                    
+                </span>
+                <hr style="height:2px;border:none;color:#AAA;background-color:#AAA;" />
+                <br>
+                <address>
+                  <strong>Canada</strong><br>
+                  8 McKee Avenue<br>
+                  Toronto, ON, M2N 7E5<br>
+                  <abbr title="Phone">P :</abbr> (+1) 647 - 792 - 9139<br>
+                  <a href="mailto:salar.sayyad@rhostam.com" class="socialIcon">salar.sayyad@rhostam.com</a>
+                </address>
+                <address>
+                  <strong>USA</strong><br>
+                  600 West Van Buren Street, Suite 210<br>
+                  Chicago, IL 60607<br>
+                  <abbr title="Phone">P :</abbr> (+1) 312 - 608 - 0018<br>
+                  <a href="mailto:nicholas.dudynskay@rhostam.com" class="socialIcon">nicholas.dudynskay@rhostam.com</a>
+                </address>
+            </div>
+        </div>
+    </div>
+</div>

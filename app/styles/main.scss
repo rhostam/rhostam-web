@@ -1,0 +1,130 @@
+// bower:scss
+// endbower
+
+body {
+  padding-top:100px;
+}
+
+.pageHeading {
+  .mainHeading {
+    font-size: 46px;
+  }
+  .subHeading {
+    font-size: 28px;
+    font-weight: 300;
+    text-align: right;
+  }
+}
+
+.pageHeadingSeparator {
+  margin-bottom: 40px;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+
+  .subHeading {
+    font-size: 40px;
+    font-weight: 300;
+    color: #919191;
+    margin-top: 38px;
+    margin-bottom: 38px;
+    .productName {
+      font-size: 80px;
+    }
+  }
+
+  .marketingVectors {
+    margin-top: 24px;
+    padding-bottom: 24px;
+    :hover .overlay {opacity:0.6;}
+    .overlay {
+      position:absolute;
+      top:0;
+      left:0;
+      margin-left: 14px;
+      width:89%;
+      height:100%;
+      background:#fff;
+      opacity:0;
+      .text {
+        position: relative;
+        font-size: 1.5em;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.subSection {
+  margin-bottom: 30px;
+
+  .heading {
+    font-size: 35px;
+    font-weight: 600;
+    margin-right: 10px;
+  }
+  .headingTag {
+    font-size: 25px;
+    font-weight: 300;
+  }
+  .mainText {
+    font-size: 18px;
+    font-weight: 300;
+    padding-bottom: 50px;
+  }
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+
+  p + h4 {
+    margin-top: 28px;
+  }
+
+  .features {
+    text-align: center;
+    //border: 1px solid #e5e5e5;
+    padding-top: 15px;
+
+    .heading{
+      margin-top: 30px;
+    }
+  }
+}
+
+.mainCTA {
+  background-color: #ff851b;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: -60px;
+
+  .btnMainTxt {
+    font-size: 20px;
+  }
+
+  .btnSmlTxt {
+    font-size: 12px;
+  }
+}
+
+.bottom-panel {
+  width: 100%;
+  height: 45px;
+  overflow: hidden;
+  border-radius: 2px;
+
+  .img {
+    width: 100%;
+    height: 100%;
+    margin: -150px 0 0 -150px;
+  }
+}
+
+footer {
+  margin:4em 0;
+}

@@ -1,0 +1,21 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/salar/.nvm/v0.10.16/bin/node',
+1 verbose cli   '/home/salar/.nvm/v0.10.16/bin/npm',
+1 verbose cli   'config',
+1 verbose cli   'set',
+1 verbose cli   'prefix',
+1 verbose cli   '/home/salar/npm' ]
+2 info using npm@1.3.8
+3 info using node@v0.10.16
+4 error EEXIST, mkdir '/home/salar/.nvm/v0.10.16/bin/npm'
+File exists: /home/salar/.nvm/v0.10.16/bin/npm
+Move it away, and try again.
+5 error System Linux 3.18.3-x86_64-linode51
+6 error command "/home/salar/.nvm/v0.10.16/bin/node" "/home/salar/.nvm/v0.10.16/bin/npm" "config" "set" "prefix" "/home/salar/npm"
+7 error cwd /home/salar/projects/rhostam
+8 error node -v v0.10.16
+9 error npm -v 1.3.8
+10 error path /home/salar/.nvm/v0.10.16/bin/npm
+11 error code EEXIST
+12 error errno 47
+13 verbose exit [ 47, true ]
